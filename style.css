@@ -1,5 +1,4 @@
-div {
-  width: 100%;
+body {
   margin: auto;
 }
 
@@ -10,7 +9,7 @@ html {
     font-family:"Roboto", Sans-serif ;
 }
 
-a {
+.nav-margin a {
     color: rgb(255, 255, 255);
 }
 
@@ -24,27 +23,31 @@ a {
 
 /*    Navbar    */
 .navbar {
-    display: flex;
+    color: white;
     align-items: center;
     background-color:rgb(0, 87, 0);
-    
   }
+
+  .nav-margin {
+    display: flex;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   
   .header-logo {
     height: 36px;
-    margin-left: 24px;
     box-shadow: 1px 1px;
   }
   
   
   .nav-links {
-    
     display: flex;
-    width: 800px;
-    list-style: none;
-    margin-left: auto;
-    justify-content: center;
-    
+    gap: 16px;
+    list-style-type: none;
   }
   
   .nav-links a {
@@ -64,7 +67,7 @@ a {
     color: white;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.37);
     background-image:url("./image/tractor-side.jpg");
-    height: 500px;
+    height: 400px;
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: cover;
@@ -72,22 +75,59 @@ a {
   }
 
   .intro-text {
-    max-width: 1500px;
     display: flex;
     flex-direction: column;
-    width: 800px;
-    justify-items: left;
-    align-items: left;
     text-align: left;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .intro-header {
-    padding-top: 150px;
+    padding-top: 100px;
+    margin-bottom: 0px;
     font-size: 36px;
     font-weight: bold;
   }
 
 .intro-maintext {
-  font-size: 18px;
+  padding-right: 500px;
+  font-size: 16px;
   
+}
+
+/*    Product and Services    */
+
+.product-services {
+  padding-top: 75px;
+  text-align: center;
+  color:rgb(0, 87, 0)
+}
+
+.container {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  gap: 72px;
+  max-width: 360;
+}
+
+.product-services img {
+  width: 360px;
+  height: 200px;
+}
+
+.product-services a{
+  text-decoration: none;
+}
+
+.product-services h3{
+  color:rgb(0, 87, 0)
+}
+
+.product-services p{
+  color:rgb(95, 95, 95);
+  font-size: 16px;
 }
