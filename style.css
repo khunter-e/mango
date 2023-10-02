@@ -195,9 +195,9 @@ color:rgb(95, 95, 95);
   text-decoration: none;
 }
 
-.HPW {
-  width: 150px;
-  height: 100px;
+.HPW img{
+  width: 350px;
+  height: 250px;
   padding-bottom: 10px;
 }
 
